@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50px"
+    android:background="@drawable/bgbg"
+    android:paddingBottom="20px">
+
+    <ImageView
+        android:id="@+id/imgGhe"
+        android:layout_width="199dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images3" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:text="$550"
+        android:textColor="#171515"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGhe"
+        app:layout_constraintEnd_toEndOf="@+id/imgGhe"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="@+id/imgGhe"
+        app:layout_constraintTop_toTopOf="@+id/imgGhe"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="133dp"
+        android:layout_height="22dp"
+        android:background="#FDFCFA"
+        android:text="Matteo ArmChair"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGhe"
+        app:layout_constraintEnd_toEndOf="@+id/imgGhe"
+        app:layout_constraintStart_toStartOf="@+id/imgGhe"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/bgbutton"
+        android:text="+"
+        android:textColor="#FBF8F8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGhe"
+        app:layout_constraintStart_toStartOf="@+id/imgGhe" />
+</androidx.constraintlayout.widget.ConstraintLayout>
